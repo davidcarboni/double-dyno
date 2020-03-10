@@ -2,7 +2,9 @@
 
 var express = require('express');
 var request = require('request');
+
 var app = express();
+const PORT = process.env.PORT || 3000
 
 // So we can exit the Docker container with Ctrl-C
 // https://github.com/nodejs/node/issues/4182
@@ -22,5 +24,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Web app listening on port 3000!');
+  console.log('Web app listening on port ${PORT}!');
 });

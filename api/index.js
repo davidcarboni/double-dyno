@@ -10,6 +10,7 @@ process.on('SIGINT', function() {
 });
 
 var app = express();
+const PORT = process.env.PORT || 3000
 
 // configure our express instance with some body-parser settings 
 // including handling JSON data
@@ -26,5 +27,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('API listening on port 3000!');
+  console.log('API listening on port ${PORT}!');
 });
