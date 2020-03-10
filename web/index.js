@@ -14,7 +14,7 @@ process.on('SIGINT', function() {
 
 app.get('/', function (req, res) {
 
-  request('http://api:3000/data', function (error, response, body) {
+  request(`http://api:3000/data`, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       res.send(JSON.parse(body))
     } else {
@@ -23,6 +23,6 @@ app.get('/', function (req, res) {
   })
 });
 
-app.listen(3000, function () {
-  console.log('Web app listening on port ${PORT}!');
+app.listen(PORT, function () {
+  console.log(`Web app listening on port ${PORT}!`);
 });

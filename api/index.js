@@ -26,6 +26,6 @@ app.get('/', function (req, res) {
   res.send("Head on over to /data")
 });
 
-app.listen(3000, function () {
-  console.log('API listening on port ${PORT}!');
+app.listen(PORT, function () {
+  console.log(`API listening on port ${PORT}!`);
 });
