@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Example API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidcarboni/double-dyno"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Example",
+    "API"
+  ],
+  "author": "David Carboni",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
