@@ -17,9 +17,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/data', function (req, res) {
-  res.send({"message": "Hello World!"});
+  res.send({"message": "Welcome to the API!"});
+});
+
+app.get('/', function (req, res) {
+
+  res.send("Head on over to /data")
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('API listening on port 3000!');
 });
